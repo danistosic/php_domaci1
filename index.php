@@ -1,11 +1,9 @@
 
 <?php
 $naslov = "Postani Programer";
-$nav = ["Glavna", "O nama", "Kontakt"];
 ?>
 
 <!DOCTYPE html>
-<html>
 <head>
   <title><?php echo $naslov; ?></title>
 </head>
@@ -13,12 +11,15 @@ $nav = ["Glavna", "O nama", "Kontakt"];
   <h1><?php echo $naslov; ?></h1>
 
   <nav>
-    <?php
-      foreach ($nav as $link) {
-        echo "<a href='#'>$link</a> ";
-      }
-    ?>
+    <a href="home.php">Glavna</a>
+    <a href="about_us.php">O Nama</a>
+    <a href="contact.php">Kontakt</a>
   </nav>
+
+  <footer>
+    <p>Copyright &copy; mojsajt <?php echo date("Y"); ?></p>
+  </footer>
 </body>
 </html>
+
 
